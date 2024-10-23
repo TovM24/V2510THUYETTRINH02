@@ -5,15 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- --------- UNICONS ---------- -->
     <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+    <!-- --------- FONT ---------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <!-- <link rel="stylesheet" href="icons.css"> -->
     <!-- --------- CSS ---------- -->
     <link rel="stylesheet" href="./assets/style/styles.css">
+    <link rel="stylesheet" href="./assets/style/cardStyle.css">
+    <link rel="stylesheet" href="./assets/style/accordion.css">
     <!-- --------- FAVICON ---------- -->
     <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
     <title>Portfolio | Ludiflex</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="blur">
     <!-- --------------- HEADER --------------- -->
         <nav id="header">
             <div class="nav-logo">
@@ -62,103 +68,118 @@
                     <p>Cuộn xuống</p>
                 </a>
             </div>
-       </section>
-       <!-- -------------- ABOUT BOX ---------------- -->
-       <section class="section" id="about">
-          <div class="top-header">
-            <!-- thay thế cho báo cáo kết quả nghiên cứu một vấn êề vhdd -->
-            <h1>Khám phá truyện dân gian Tấm Cám: Di sản văn hóa và những thông điệp nhân văn</h1>
-          </div>
-          <div class="row">
-            <div class="col">
-                <div class="about-info">
-                    <h3>Truyện Tấm Cám</h3>
-                    <p>Truyện Tấm Cám là một trong những tác phẩm tiêu biểu của văn học dân gian Việt Nam, thể hiện rõ nét cuộc đấu tranh giữa thiện và ác, giữa số phận và sự can thiệp của yếu tố thần linh. Tấm Cám không chỉ là câu chuyện quen thuộc với nhiều thế hệ người Việt, mà còn chứa đựng những giá trị văn hóa, xã hội, và đạo đức sâu sắc, phản ánh sự chuyển giao quyền lực và sự phân chia giai cấp trong xã hội xưa.</p>
-                </div>
+        </section>
+        <!-- -------------- ABOUT BOX ---------------- -->
+        <section class="section" id="about">
+            <div class="top-header">
+                <!-- thay thế cho báo cáo kết quả nghiên cứu một vấn êề vhdd -->
+                <h1>Khám phá truyện dân gian Tấm Cám </h1> 
+                <h1>di sản văn hóa và những thông điệp nhân văn</h1>
             </div>
-            <div class="col">
-                <div class="skills-box">
-                    <div class="skills-header">
-                        <h3>Lý do chọn nghiên cứu</h3>
-                    </div>
-                    <div class="skills-list">
-                        <span>Truyện Tấm Cám phản ánh rõ những đặc trưng của văn hóa dân gian Việt Nam, từ cách xây dựng nhân vật đến các yếu tố thần thoại, tâm linh và phong tục tập quán.</span>
-                        <span>Các nhân vật trong truyện không chỉ phản ánh rõ các mối quan hệ gia đình trong xã hội phong kiến mà còn là bài học về đạo đức, trách nhiệm và lòng kiên trì trước nghịch cảnh.</span>
-                        <span>Từ những giá trị đạo đức và văn hóa sâu sắc, truyện Tấm Cám còn mở ra nhiều góc nhìn khác nhau trong việc nghiên cứu về quyền lực, giới tính và công lý.</span>
-                        <span>Việc nghiên cứu truyện Tấm Cám giúp khám phá sâu hơn những giá trị cốt lõi trong truyện, đồng thời đóng góp vào việc bảo tồn và phát huy giá trị văn hóa dân gian Việt Nam trong thời hiện đại.</span>
-                    </div>
-                </div>
-            </div>
-          </div>
-       </section>
-       <!-- -------------- PROJECT BOX ---------------- -->
-       <section class="section" id="projects">
-          <div class="top-header">
-              <h1>Tổng quan nội dung</h1>
+            <div class="row card-about-info">
+                <div class="col">
+                    <!-- <div class="about-info">
+                        <h3>Truyện Tấm Cám</h3>
+                        <p>Truyện Tấm Cám là một trong những tác phẩm tiêu biểu của văn học dân gian Việt Nam, thể hiện rõ nét cuộc đấu tranh giữa thiện và ác, giữa số phận và sự can thiệp của yếu tố thần linh. Tấm Cám không chỉ là câu chuyện quen thuộc với nhiều thế hệ người Việt, mà còn chứa đựng những giá trị văn hóa, xã hội, và đạo đức sâu sắc, phản ánh sự chuyển giao quyền lực và sự phân chia giai cấp trong xã hội xưa.</p>
+                    </div> -->
 
-              <!-- <a href="./demo.html">click me!</a> -->
-          </div>
-          <div class="project-container">
-            <div class="project-box">
-                <i class="uil uil-history"></i>
-                <h3>Lịch sử và xuất xứ</h3>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-notes"></i>
-                <h3>Tóm tắt</h3>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-chart"></i>
-                <h3>Phân tích nhân vật</h3>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-chart"></i>
-                <h3>Phân tích các giá trị văn hóa và tín ngưỡng trong truyện</h3>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-heart"></i>
-                <h3>Các giá trị đạo đức vã xã hội trong truyện</h3>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-compress-point"></i>
-                <h3>So sánh với các truyện cổ tích khác</h3>
-            </div>
-            <div class="project-box">
-                <i class="uil uil-paperclip"></i>
-                <h3>Ý nghĩa thời hiện đại và phê phán trong truyện</h3>
-            </div>
-        </div>
-       </section>
-       <!-- -------------- CONTACT BOX ---------------- -->
-       <section class="section" id="contact">
-          <div class="top-header">
-            <h1>Get in touch</h1>
-            <span>Do you have a project in your mind, contact me here</span>
-          </div>
-          <div class="row">
-             <div class="col">
-                <div class="contact-info">
-                    <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
-                    <p><i class="uil uil-envelope"></i> Email: john@doe.com</p>
-                    <p><i class="uil uil-phone"></i> Tel: +250 708 770 000</p>
-                </div>
-             </div>
-             <div class="col">
-                <div class="form-control">
-                    <div class="form-inputs">
-                        <input type="text" class="input-field" placeholder="Name">
-                        <input type="text" class="input-field" placeholder="Email">
-                    </div>
-                    <div class="text-area">
-                        <textarea placeholder="Message"></textarea>
-                    </div>
-                    <div class="form-button">
-                        <button class="btn">Send <i class="uil uil-message"></i></button>
+                    <div id="card-area">
+                        <div class="wrapper" style="padding: 0">
+                            <div class="box-area" style="grid-template-columns: 1fr;">
+                                <div class="box">
+                                    <img alt="" src="./assets/img/img2.jpg" style="width: 100%; height: 100%;">
+                                    <div class="overlay">
+                                        <p>Truyện Tấm Cám là một trong những tác phẩm tiêu biểu của văn học dân gian Việt Nam, thể hiện rõ nét cuộc đấu tranh giữa thiện và ác, giữa số phận và sự can thiệp của yếu tố thần linh. Tấm Cám không chỉ là câu chuyện quen thuộc với nhiều thế hệ người Việt, mà còn chứa đựng những giá trị văn hóa, xã hội, và đạo đức sâu sắc, phản ánh sự chuyển giao quyền lực và sự phân chia giai cấp trong xã hội xưa.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-             </div>
-          </div>
-       </section>
+                <div class="col">
+                    <div class="skills-box">
+                        <div class="skills-header">
+                            <h3>Lý do chọn nghiên cứu</h3>
+                        </div>
+                        <div class="skills-list">
+                            <span>Truyện Tấm Cám phản ánh rõ những đặc trưng của văn hóa dân gian Việt Nam, từ cách xây dựng nhân vật đến các yếu tố thần thoại, tâm linh và phong tục tập quán.</span>
+                            <span>Các nhân vật trong truyện không chỉ phản ánh rõ các mối quan hệ gia đình trong xã hội phong kiến mà còn là bài học về đạo đức, trách nhiệm và lòng kiên trì trước nghịch cảnh.</span>
+                            <span>Từ những giá trị đạo đức và văn hóa sâu sắc, truyện Tấm Cám còn mở ra nhiều góc nhìn khác nhau trong việc nghiên cứu về quyền lực, giới tính và công lý.</span>
+                            <span>Việc nghiên cứu truyện Tấm Cám giúp khám phá sâu hơn những giá trị cốt lõi trong truyện, đồng thời đóng góp vào việc bảo tồn và phát huy giá trị văn hóa dân gian Việt Nam trong thời hiện đại.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- -------------- PROJECT BOX ---------------- -->
+        <section class="section" id="projects">
+            <div class="top-header">
+                <h1>Tổng quan nội dung</h1>
+
+                <!-- <a href="./demo.html">click me!</a> -->
+            </div>
+            <div class="project-container">
+                <div class="project-box skills-header" data-popup="popup1" onclick="toggle(event, 'popup1')">
+                    <i class="uil uil-history"></i>
+                    <h3>Lịch sử và xuất xứ</h3>
+                </div>
+                <div class="project-box skills-header" data-popup="popup2" onclick="toggle(event, 'popup2')">
+                    <i class="uil uil-notes"></i>
+                    <h3>Tóm tắt</h3>
+                </div>
+                <div class="project-box skills-header" data-popup="popup3" onclick="toggle(event, 'popup3')">
+                    <i class="uil uil-chart"></i>
+                    <h3>Phân tích nhân vật</h3>
+                </div>
+                <div class="project-box skills-header" data-popup="popup4" onclick="toggle(event, 'popup4')">
+                    <i class="uil uil-chart"></i>
+                    <h3>Phân tích các giá trị văn hóa và tín ngưỡng trong truyện</h3>
+                </div>
+                <div class="project-box skills-header" data-popup="popup5" onclick="toggle(event, 'popup5')">
+                    <i class="uil uil-heart"></i>
+                    <h3>Các giá trị đạo đức vã xã hội trong truyện</h3>
+                </div>
+                <div class="project-box skills-header" data-popup="popup6" onclick="toggle(event, 'popup6')">
+                    <i class="uil uil-compress-point"></i>
+                    <h3>So sánh với các truyện cổ tích khác</h3>
+                </div>
+                <div class="project-box skills-header" data-popup="popup7" onclick="toggle(event, 'popup7')">
+                    <i class="uil uil-paperclip"></i>
+                    <h3>Ý nghĩa thời hiện đại và phê phán trong truyện</h3>
+                </div>
+                
+            </div>
+        </section>
+        <!-- -------------- CONTACT BOX ---------------- -->
+        <section class="section" id="contact">
+            <div class="top-header">
+                <h1>Get in touch</h1>
+                <span>Do you have a project in your mind, contact me here</span>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="contact-info">
+                        <h2>Find Me <i class="uil uil-corner-right-down"></i></h2>
+                        <p><i class="uil uil-envelope"></i> Email: john@doe.com</p>
+                        <p><i class="uil uil-phone"></i> Tel: +250 708 770 000</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="form-control">
+                        <div class="form-inputs">
+                            <input type="text" class="input-field" placeholder="Name">
+                            <input type="text" class="input-field" placeholder="Email">
+                        </div>
+                        <div class="text-area">
+                            <textarea placeholder="Message"></textarea>
+                        </div>
+                        <div class="form-button">
+                            <button class="btn">Send <i class="uil uil-message"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- --------------- FOOTER --------------- -->
     <footer>
@@ -191,6 +212,595 @@
             <p>Copyright &copy; <a href="#home" style="text-decoration: none;">John Doe</a> - All rights reserved</p>
         </div>
     </footer>
+    </div>
+
+    <!-- -------------- POPUP BOX ---------------- -->
+    <div id="popup1" class="popup">
+        <div class="popup-name">
+            <button class="popup-btn btn" onclick="toggle(event, 'popup1')"><i class="uil uil-times-circle"></i></button>
+            <h1>Lịch sử và xuất xứ</h1>
+        </div>
+        <p class="popup-summary">Truyện Tấm Cám là một trong những câu chuyện cổ tích nổi tiếng nhất của văn học dân gian Việt Nam. Nguồn gốc của truyện bắt đầu từ hình thức truyền miệng trong dân gian, qua nhiều thế hệ người Việt. Câu chuyện này phản ánh đậm nét văn hóa, tâm lý, phong tục tập quán của người dân thời kỳ phong kiến, đặc biệt là mối quan hệ mẹ ghẻ - con chồng và sự đấu tranh giữa cái thiện và cái ác.</p>
+        <!-- nguon goc truyen mieng -->
+        <div class="popup-origin">
+            <h2>Nguồn gốc truyền miệng</h2>
+            <p class="popup-summary popup-other">Truyện Tấm Cám được lan truyền trong dân gian chủ yếu bằng hình thức kể chuyện. Mỗi lần được kể, nội dung và các chi tiết trong truyện có thể thay đổi tùy theo cách diễn giải của người kể, điều này dẫn đến nhiều phiên bản khác nhau của truyện. Các câu chuyện truyền miệng thường được truyền từ đời này qua đời khác, giúp duy trì và phát triển các giá trị đạo đức và xã hội qua thời gian.</p>
+        </div>
+        <!-- ghi chep trong tai lieu chinh thuc -->
+        <div class="popup-note">
+            <div class="popup-origin">
+                <h2>Ghi chép trong tài liệu chính thức</h2>
+            </div>
+            <div class="popup-bottom popup-summary popup-other">
+                <div class="popup-left">
+                    <img src="./assets/img/img8.jpg" alt="">
+                </div>
+                <div class="popup-right popup-summary popup-other">
+                    <p>Về sau, <span class="highlight">Tấm Cám</span> đã được các nhà văn học và nghiên cứu ghi chép lại trong các tuyển tập truyện cổ tích Việt Nam. Một trong những tài liệu sớm ghi chép về câu chuyện này là sách <span class="highlight">"Kho tàng truyện cổ tích Việt Nam"</span> của Nguyễn Đổng Chi, một nhà nghiên cứu văn học dân gian nổi tiếng. Nhờ các ghi chép này, truyện Tấm Cám đã trở thành một phần của văn học dân gian chính thức và được bảo tồn dưới dạng văn bản.</p>
+                </div>
+            </div>
+        </div>
+        <!-- su phat trien qua thoi gian va vung mien -->
+        <div class="popup-developer popup-origin">
+            <h2>Sự phát triển qua thời gian và vùng miền</h2>
+            <p class="popup-summary popup-other" style="margin-bottom: 0;">Trải qua thời gian, truyện Tấm Cám có nhiều phiên bản khác nhau tại các vùng miền. Mỗi vùng có cách kể chuyện và chi tiết khác nhau, ví dụ:</p>
+            <div id="card-area">
+                <div class="wrapper" style="padding: 0;">
+                    <div class="box-area">
+                        <div class="box">
+                            <img alt="" src="./assets/img/img6.jpg">
+                            <h2>Miền Bắc</h2>
+                            <div class="overlay">
+                                <p>Ở một số phiên bản miền Bắc, Tấm sau khi chết biến thành chim vàng anh rồi được hồi sinh.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img7.jpg">
+                            <h2>Miền Trung</h2>
+                            <div class="overlay">
+                                <p>Ở miền Trung, sau khi Tấm chết, cô biến thành cây xoan đào rồi quả thị, với một số chi tiết về sự hóa thân được thêm vào hoặc thay đổi.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img4.jpg">
+                            <h2>Miền Nam</h2>
+                            <div class="overlay">
+                                <p>Ở miền Nam, có những phiên bản kết thúc theo cách nhẹ nhàng hơn, không đề cập đến cái chết của Cám mà chỉ nhấn mạnh vào sự trừng phạt đạo đức.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="popup-summary popup-other">Những thay đổi này phản ánh tư tưởng, niềm tin và quan điểm xã hội khác nhau của từng vùng miền, nhưng chung quy vẫn giữ lại cốt lõi của câu chuyện về sự đối đầu giữa cái thiện và cái ác.</p>
+        </div>
+        <!-- tam anh huong qua cac thoi ky -->
+        <div class="popup-influence popup-origin">
+            <h2>Tầm ảnh hưởng qua thời kỳ</h2>
+            <p class="popup-summary popup-other">Qua thời gian, truyện Tấm Cám không chỉ đơn thuần là một câu chuyện cổ tích dành cho trẻ em mà còn là biểu tượng cho sự kiên cường, lòng tin vào công lý và niềm tin vào sự chiến thắng của cái thiện. Truyện đã trở thành một phần quan trọng trong văn hóa truyền thống Việt Nam, và qua các giai đoạn lịch sử khác nhau, nó vẫn được lưu truyền và tiếp tục phát triển.</p>
+            <div id="card-area">
+                <div class="wrapper">
+                    <div class="box-area" style="gap: 60; grid-template-columns: 1fr;">
+                        <div class="box">
+                            <img style="height: 100%" alt="" src="./assets/img/img2.jpg">
+                        </div>
+                        <!-- <div class="box">
+                            <img alt="" src="./assets/img/img7.jpg">
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img4.jpg">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup2" class="popup">
+        <div class="popup-name popup-name2">
+            <button class="popup-btn btn" onclick="toggle(event, 'popup2')"><i class="uil uil-times-circle"></i></button>
+            <h1>Tóm Tắt</h1>
+        </div>
+        <div class="popup-bottom popup-summary popup-other">
+            <div class="popup-left-max-height popup-left">
+                <img src="./assets/img/img1.jpg" alt="">
+            </div>
+            <div class="popup-right popup-summary popup-other">
+                <p>Tấm và Cám là hai chị em <span class="highlight">cùng cha khác mẹ</span>. Tấm <span class="highlight">hiền lành, mồ côi cha mẹ,</span> sống với <span class="highlight">dì ghẻ độc ác</span> và bị bắt làm việc vất vả, trong khi Cám được <span class="highlight">nuông chiều.</span> Một lần, khi đi bắt tép, Tấm bị Cám <span class="highlight">lừa mất giỏ tép. Bụt giúp Tấm</span> bằng cách bảo cô nuôi cá bống. Mẹ con Cám sau đó <span class="highlight">lừa giết cá bống,</span> khiến Tấm khóc, nhưng <span class="highlight">Bụt lại giúp</span> cô nhặt xương cá và hứa sẽ có điều tốt đẹp sau.
+
+                    Khi vua mở <span class="highlight">hội kén vợ,</span> Tấm bị dì ghẻ cản trở không cho đi. <span class="highlight">Bụt giúp Tấm</span> có quần áo đẹp và đôi hài để đến dự hội. Tấm đánh rơi một chiếc hài, vua nhặt được và kén vợ. Tấm đi vừa hài và được <span class="highlight">vua cưới làm hoàng hậu</span>.
+                    
+                    Ghen tức, mẹ con Cám lập mưu <span class="highlight">giết Tấm</span> bằng cách chặt cây cau khi Tấm đang trèo. Sau khi chết, Tấm <span class="highlight">hóa thân</span> qua nhiều hình dạng như chim vàng anh, cây xoan đào, khung cửi, và cuối cùng là quả thị. Từ quả thị, <span class="highlight">Tấm sống lại</span> và được một bà lão tốt bụng chăm sóc. Nhà vua gặp lại Tấm và đón cô về cung. Cám hỏi Tấm cách làm đẹp, <span class="highlight">Tấm lừa Cám dội nước sôi,</span> khiến Cám chết.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup3" class="popup">
+        <div class="popup-name">
+            <button class="popup-btn btn" onclick="toggle(event, 'popup3')"><i class="uil uil-times-circle"></i></button>
+            <h1>Phân tích nhân vật</h1>
+        </div>
+
+        <!-- các mục khi click  -->
+        <div class="accordian">
+            <div class="item">
+                <div class="header popup-origin" style="margin-top: 0;">
+                    <h2>Nhân vật Tấm</h2>
+                </div>
+                <div class="body">
+                    <div class="content" style="line-height: 30px;">
+                        <ul>
+                            <li class="popup-summary popup-other">Tấm là hình mẫu của sự chịu đựng, hiền lành và nhẫn nại. Cô luôn cố gắng vượt qua những khó khăn, từ việc bị mẹ kế và em gái Cám ngược đãi đến việc khắc phục những mất mát trong cuộc sống.</li>
+                            <li class="popup-summary popup-other">Hình ảnh Tấm cũng phản ánh khát khao về công lý và sự thật. Dù trải qua nhiều đau khổ, Tấm vẫn giữ niềm tin vào cái thiện. Hành động của Tấm khi trả thù Cám ở cuối truyện có thể gây tranh cãi; một số có thể thấy đây là sự thể hiện sức mạnh của công lý, trong khi những người khác có thể cảm thấy điều này làm mất đi tính thiện của cô.</li>
+                            <li class="popup-summary popup-other">Sự biến hóa của Tấm từ một cô gái hiền lành trở thành hoàng hậu cũng thể hiện rằng công lao và đức hạnh cuối cùng sẽ được đền đáp.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header popup-origin"  style="margin-top: 0;">
+                    <h2>Nhân vật Cám</h2>
+                </div>
+                <div class="body">
+                    <div class="content" style="line-height: 30px;">
+                        <ul>
+                            <li class="popup-summary popup-other">Cám đại diện cho cái ác, tham lam và ích kỷ. Cô là nhân vật luôn ganh ghét và tìm cách hãm hại Tấm để đạt được lợi ích cá nhân.</li>
+                            <li class="popup-summary popup-other">Sự lừa dối và mưu mô của Cám không chỉ phản ánh những tính xấu trong con người mà còn là một lời phê phán về những giá trị sai lệch trong xã hội, đặc biệt trong mối quan hệ mẹ ghẻ - con chồng.</li>
+                            <li class="popup-summary popup-other">Cuối cùng, cái chết thảm khốc của Cám khi bị Tấm lừa dội nước sôi có thể được xem như một hình phạt cho những hành động ác độc mà cô đã gây ra.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="header popup-origin"  style="margin-top: 0;">
+                    <h2>Mẹ kế</h2>
+                </div>
+                <div class="body">
+                    <div class="content" style="line-height: 30px;">
+                        <ul>
+                            <li class="popup-summary popup-other">Cám đại diện cho cái ác, tham lam và ích kỷ. Cô là nhân vật luôn ganh ghét và tìm cách hãm hại Tấm để đạt được lợi ích cá nhân.</li>
+                            <li class="popup-summary popup-other">Sự lừa dối và mưu mô của Cám không chỉ phản ánh những tính xấu trong con người mà còn là một lời phê phán về những giá trị sai lệch trong xã hội, đặc biệt trong mối quan hệ mẹ ghẻ - con chồng.</li>
+                            <li class="popup-summary popup-other">Cuối cùng, cái chết thảm khốc của Cám khi bị Tấm lừa dội nước sôi có thể được xem như một hình phạt cho những hành động ác độc mà cô đã gây ra.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="header popup-origin" style="margin-top: 0;">
+                    <h2>Yếu tố siêu nhiên – Bụt</h2>
+                </div>
+                <div class="body">
+                    <div class="content" style="line-height: 30px;">
+                        <ul>
+                            <li class="popup-summary popup-other">Cám đại diện cho cái ác, tham lam và ích kỷ. Cô là nhân vật luôn ganh ghét và tìm cách hãm hại Tấm để đạt được lợi ích cá nhân.</li>
+                            <li class="popup-summary popup-other">Sự lừa dối và mưu mô của Cám không chỉ phản ánh những tính xấu trong con người mà còn là một lời phê phán về những giá trị sai lệch trong xã hội, đặc biệt trong mối quan hệ mẹ ghẻ - con chồng.</li>
+                            <li class="popup-summary popup-other">Cuối cùng, cái chết thảm khốc của Cám khi bị Tấm lừa dội nước sôi có thể được xem như một hình phạt cho những hành động ác độc mà cô đã gây ra.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- các cục khi click -->
+
+        <!-- 1 vai hinh anh ve tam cam, but (khong co), me ke -->
+        <div class="popup-influence popup-origin" style="margin: 0">
+            <div id="card-area" style="padding: 20px;">
+                <div class="wrapper" style="padding:0">
+                    <div class="box-area">
+                        <div class="box">
+                            <img style="height: 100%" alt="" src="./assets/img/img9.jpg">
+                        </div>
+                        <div class="box">
+                            <img style="height: 100%" alt="" src="./assets/img/img2.jpg">
+                        </div>
+                        <div class="box">
+                            <img style="height: 100%" alt="" src="./assets/img/img4.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="popup-origin">
+            <h2>Thông điệp mà các nhân vật mang lại</h2>
+            <p class="popup-summary popup-other">Qua câu chuyện, Tấm Cám truyền tải thông điệp về giá trị của lòng kiên nhẫn, sự kiên định và niềm tin vào cái thiện. Nó nhấn mạnh rằng dù có gặp khó khăn, cái thiện cuối cùng sẽ thắng lợi, và những hành động ác độc sẽ phải trả giá.</p>
+            <!-- còn 1 mục -->
+        </div>
+    </div>
+
+    <div id="popup4" class="popup">
+        <div class="popup-name">
+            <button class="popup-btn btn" onclick="toggle(event, 'popup4')"><i class="uil uil-times-circle"></i></button>
+            <h1>Phân tích các giá trị văn hóa và tín ngưỡng trong truyện Tấm Cám</h1>
+        </div>
+        <!-- các mục khi click  -->
+        <div class="accordian">
+            <div class="item">
+                <div class="header popup-origin" style="margin-top: 0;">
+                    <h2>Vai trò của Bụt</h2>
+                </div>
+                <div class="body">
+                    <div class="content" style="line-height: 30px; display: flex;">
+                        <div class="content-img">
+                            <img src="./assets/img/img11.jpg" alt="" style="height: 500px;">
+                        </div>
+
+                        <ul>
+                            <li class="popup-summary popup-other">Bụt là hiện thân của sức mạnh siêu nhiên, đóng vai trò như một người bảo vệ và hướng dẫn Tấm trong những lúc khó khăn. Sự hiện diện của Bụt mang lại hy vọng cho Tấm, giúp cô vượt qua những thử thách mà mẹ kế và Cám đặt ra.</li>
+                            <li class="popup-summary popup-other">Bụt không chỉ là một nhân vật thần thoại mà còn tượng trưng cho lòng tốt, sự công bằng và sự che chở của các đấng thần linh. Sự hỗ trợ của Bụt cho thấy niềm tin của người dân vào thế giới siêu nhiên và khả năng can thiệp của các thế lực bên ngoài vào cuộc sống thực tế.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="header popup-origin"  style="margin-top: 0;">
+                    <h2>Yếu tố biến hình</h2>
+                </div>
+                <div class="body">
+                    <div class="content" style="line-height: 30px;">
+                        <ul>
+                            <li class="popup-summary popup-other">Cám đại diện cho cái ác, tham lam và ích kỷ. Cô là nhân vật luôn ganh ghét và tìm cách hãm hại Tấm để đạt được lợi ích cá nhân.</li>
+                            <li class="popup-summary popup-other">Sự lừa dối và mưu mô của Cám không chỉ phản ánh những tính xấu trong con người mà còn là một lời phê phán về những giá trị sai lệch trong xã hội, đặc biệt trong mối quan hệ mẹ ghẻ - con chồng.</li>
+                            <li class="popup-summary popup-other">Cuối cùng, cái chết thảm khốc của Cám khi bị Tấm lừa dội nước sôi có thể được xem như một hình phạt cho những hành động ác độc mà cô đã gây ra.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="header popup-origin"  style="margin-top: 0;">
+                    <h2>Các chi tiết tâm linh</h2>
+                </div>
+                <div class="body">
+                    <div class="content" style="line-height: 30px;">
+                        <ul>
+                            <li class="popup-summary popup-other">Cám đại diện cho cái ác, tham lam và ích kỷ. Cô là nhân vật luôn ganh ghét và tìm cách hãm hại Tấm để đạt được lợi ích cá nhân.</li>
+                            <li class="popup-summary popup-other">Sự lừa dối và mưu mô của Cám không chỉ phản ánh những tính xấu trong con người mà còn là một lời phê phán về những giá trị sai lệch trong xã hội, đặc biệt trong mối quan hệ mẹ ghẻ - con chồng.</li>
+                            <li class="popup-summary popup-other">Cuối cùng, cái chết thảm khốc của Cám khi bị Tấm lừa dội nước sôi có thể được xem như một hình phạt cho những hành động ác độc mà cô đã gây ra.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="item">
+                <div class="header popup-origin" style="margin-top: 0;">
+                    <h2>Niềm tin tín ngưỡng của người Việt</h2>
+                </div>
+                <div class="body">
+                    <div class="content" style="line-height: 30px;">
+                        <ul>
+                            <li class="popup-summary popup-other">Cám đại diện cho cái ác, tham lam và ích kỷ. Cô là nhân vật luôn ganh ghét và tìm cách hãm hại Tấm để đạt được lợi ích cá nhân.</li>
+                            <li class="popup-summary popup-other">Sự lừa dối và mưu mô của Cám không chỉ phản ánh những tính xấu trong con người mà còn là một lời phê phán về những giá trị sai lệch trong xã hội, đặc biệt trong mối quan hệ mẹ ghẻ - con chồng.</li>
+                            <li class="popup-summary popup-other">Cuối cùng, cái chết thảm khốc của Cám khi bị Tấm lừa dội nước sôi có thể được xem như một hình phạt cho những hành động ác độc mà cô đã gây ra.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div><!-- nguon goc truyen mieng -->
+        <div class="popup-origin">
+            <h2>Kết luận</h2>
+            <p class="popup-summary popup-other">Qua việc khám phá các giá trị văn hóa và tín ngưỡng trong truyện Tấm Cám, ta thấy rằng câu chuyện không chỉ đơn thuần là một bài học về cái thiện và cái ác mà còn mang trong mình những giá trị sâu sắc về tâm linh và niềm tin vào sự phù trợ từ thế giới siêu nhiên. Điều này thể hiện sự đa dạng và phong phú trong văn hóa dân gian Việt Nam, đồng thời là một phần quan trọng trong đời sống tinh thần của người dân.</p>
+        </div>
+    </div>
+
+    <div id="popup5" class="popup">
+        <div class="popup-name">
+            <button class="popup-btn btn" onclick="toggle(event, 'popup5')"><i class="uil uil-times-circle"></i></button>
+            <h1>Lịch sử và xuất xứ</h1>
+        </div>
+        <p class="popup-summary">Truyện Tấm Cám là một trong những câu chuyện cổ tích nổi tiếng nhất của văn học dân gian Việt Nam. Nguồn gốc của truyện bắt đầu từ hình thức truyền miệng trong dân gian, qua nhiều thế hệ người Việt. Câu chuyện này phản ánh đậm nét văn hóa, tâm lý, phong tục tập quán của người dân thời kỳ phong kiến, đặc biệt là mối quan hệ mẹ ghẻ - con chồng và sự đấu tranh giữa cái thiện và cái ác.</p>
+        <!-- nguon goc truyen mieng -->
+        <div class="popup-origin">
+            <h2>Nguồn gốc truyền miệng</h2>
+            <p class="popup-summary popup-other">Truyện Tấm Cám được lan truyền trong dân gian chủ yếu bằng hình thức kể chuyện. Mỗi lần được kể, nội dung và các chi tiết trong truyện có thể thay đổi tùy theo cách diễn giải của người kể, điều này dẫn đến nhiều phiên bản khác nhau của truyện. Các câu chuyện truyền miệng thường được truyền từ đời này qua đời khác, giúp duy trì và phát triển các giá trị đạo đức và xã hội qua thời gian.</p>
+        </div>
+        <!-- ghi chep trong tai lieu chinh thuc -->
+        <div class="popup-note">
+            <div class="popup-origin">
+                <h2>Ghi chép trong tài liệu chính thức</h2>
+            </div>
+            <div class="popup-bottom popup-summary popup-other">
+                <div class="popup-left">
+                    <img src="./assets/img/img8.jpg" alt="">
+                </div>
+                <div class="popup-right popup-summary popup-other">
+                    <p>Về sau, <span class="highlight">Tấm Cám</span> đã được các nhà văn học và nghiên cứu ghi chép lại trong các tuyển tập truyện cổ tích Việt Nam. Một trong những tài liệu sớm ghi chép về câu chuyện này là sách <span class="highlight">"Kho tàng truyện cổ tích Việt Nam"</span> của Nguyễn Đổng Chi, một nhà nghiên cứu văn học dân gian nổi tiếng. Nhờ các ghi chép này, truyện Tấm Cám đã trở thành một phần của văn học dân gian chính thức và được bảo tồn dưới dạng văn bản.</p>
+                </div>
+            </div>
+        </div>
+        <!-- su phat trien qua thoi gian va vung mien -->
+        <div class="popup-developer popup-origin">
+            <h2>Sự phát triển qua thời gian và vùng miền</h2>
+            <p class="popup-summary popup-other">Trải qua thời gian, truyện Tấm Cám có nhiều phiên bản khác nhau tại các vùng miền. Mỗi vùng có cách kể chuyện và chi tiết khác nhau, ví dụ:</p>
+            <div id="card-area">
+                <div class="wrapper">
+                    <div class="box-area">
+                        <div class="box">
+                            <img alt="" src="./assets/img/img6.jpg">
+                            <h2>Miền Bắc</h2>
+                            <div class="overlay">
+                                <p>Ở một số phiên bản miền Bắc, Tấm sau khi chết biến thành chim vàng anh rồi được hồi sinh.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img7.jpg">
+                            <h2>Miền Trung</h2>
+                            <div class="overlay">
+                                <p>Ở miền Trung, sau khi Tấm chết, cô biến thành cây xoan đào rồi quả thị, với một số chi tiết về sự hóa thân được thêm vào hoặc thay đổi.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img4.jpg">
+                            <h2>Miền Nam</h2>
+                            <div class="overlay">
+                                <p>Ở miền Trung, sau khi Tấm chết, cô biến thành cây xoan đào rồi quả thị, với một số chi tiết về sự hóa thân được thêm vào hoặc thay đổi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="popup-summary popup-other">Những thay đổi này phản ánh tư tưởng, niềm tin và quan điểm xã hội khác nhau của từng vùng miền, nhưng chung quy vẫn giữ lại cốt lõi của câu chuyện về sự đối đầu giữa cái thiện và cái ác.</p>
+        </div>
+        <!-- tam anh huong qua cac thoi ky -->
+        <div class="popup-influence popup-origin">
+            <h2>Tầm ảnh hưởng qua thời kỳ</h2>
+            <p class="popup-summary popup-other">Qua thời gian, truyện Tấm Cám không chỉ đơn thuần là một câu chuyện cổ tích dành cho trẻ em mà còn là biểu tượng cho sự kiên cường, lòng tin vào công lý và niềm tin vào sự chiến thắng của cái thiện. Truyện đã trở thành một phần quan trọng trong văn hóa truyền thống Việt Nam, và qua các giai đoạn lịch sử khác nhau, nó vẫn được lưu truyền và tiếp tục phát triển.</p>
+            <div id="card-area">
+                <div class="wrapper">
+                    <div class="box-area" style="gap: 60; grid-template-columns: 1fr;">
+                        <div class="box">
+                            <img style="height: 100%" alt="" src="./assets/img/img2.jpg">
+                        </div>
+                        <!-- <div class="box">
+                            <img alt="" src="./assets/img/img7.jpg">
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img4.jpg">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup6" class="popup">
+        <div class="popup-name">
+            <button class="popup-btn btn" onclick="toggle(event, 'popup6')"><i class="uil uil-times-circle"></i></button>
+            <h1>Lịch sử và xuất xứ</h1>
+        </div>
+        <p class="popup-summary">Truyện Tấm Cám là một trong những câu chuyện cổ tích nổi tiếng nhất của văn học dân gian Việt Nam. Nguồn gốc của truyện bắt đầu từ hình thức truyền miệng trong dân gian, qua nhiều thế hệ người Việt. Câu chuyện này phản ánh đậm nét văn hóa, tâm lý, phong tục tập quán của người dân thời kỳ phong kiến, đặc biệt là mối quan hệ mẹ ghẻ - con chồng và sự đấu tranh giữa cái thiện và cái ác.</p>
+        <!-- nguon goc truyen mieng -->
+        <div class="popup-origin">
+            <h2>Nguồn gốc truyền miệng</h2>
+            <p class="popup-summary popup-other">Truyện Tấm Cám được lan truyền trong dân gian chủ yếu bằng hình thức kể chuyện. Mỗi lần được kể, nội dung và các chi tiết trong truyện có thể thay đổi tùy theo cách diễn giải của người kể, điều này dẫn đến nhiều phiên bản khác nhau của truyện. Các câu chuyện truyền miệng thường được truyền từ đời này qua đời khác, giúp duy trì và phát triển các giá trị đạo đức và xã hội qua thời gian.</p>
+        </div>
+        <!-- ghi chep trong tai lieu chinh thuc -->
+        <div class="popup-note">
+            <div class="popup-origin">
+                <h2>Ghi chép trong tài liệu chính thức</h2>
+            </div>
+            <div class="popup-bottom popup-summary popup-other">
+                <div class="popup-left">
+                    <img src="./assets/img/img8.jpg" alt="">
+                </div>
+                <div class="popup-right popup-summary popup-other">
+                    <p>Về sau, <span class="highlight">Tấm Cám</span> đã được các nhà văn học và nghiên cứu ghi chép lại trong các tuyển tập truyện cổ tích Việt Nam. Một trong những tài liệu sớm ghi chép về câu chuyện này là sách <span class="highlight">"Kho tàng truyện cổ tích Việt Nam"</span> của Nguyễn Đổng Chi, một nhà nghiên cứu văn học dân gian nổi tiếng. Nhờ các ghi chép này, truyện Tấm Cám đã trở thành một phần của văn học dân gian chính thức và được bảo tồn dưới dạng văn bản.</p>
+                </div>
+            </div>
+        </div>
+        <!-- su phat trien qua thoi gian va vung mien -->
+        <div class="popup-developer popup-origin">
+            <h2>Sự phát triển qua thời gian và vùng miền</h2>
+            <p class="popup-summary popup-other">Trải qua thời gian, truyện Tấm Cám có nhiều phiên bản khác nhau tại các vùng miền. Mỗi vùng có cách kể chuyện và chi tiết khác nhau, ví dụ:</p>
+            <div id="card-area">
+                <div class="wrapper">
+                    <div class="box-area">
+                        <div class="box">
+                            <img alt="" src="./assets/img/img6.jpg">
+                            <h2>Miền Bắc</h2>
+                            <div class="overlay">
+                                <p>Ở một số phiên bản miền Bắc, Tấm sau khi chết biến thành chim vàng anh rồi được hồi sinh.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img7.jpg">
+                            <h2>Miền Trung</h2>
+                            <div class="overlay">
+                                <p>Ở miền Trung, sau khi Tấm chết, cô biến thành cây xoan đào rồi quả thị, với một số chi tiết về sự hóa thân được thêm vào hoặc thay đổi.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img4.jpg">
+                            <h2>Miền Nam</h2>
+                            <div class="overlay">
+                                <p>Ở miền Trung, sau khi Tấm chết, cô biến thành cây xoan đào rồi quả thị, với một số chi tiết về sự hóa thân được thêm vào hoặc thay đổi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="popup-summary popup-other">Những thay đổi này phản ánh tư tưởng, niềm tin và quan điểm xã hội khác nhau của từng vùng miền, nhưng chung quy vẫn giữ lại cốt lõi của câu chuyện về sự đối đầu giữa cái thiện và cái ác.</p>
+        </div>
+        <!-- tam anh huong qua cac thoi ky -->
+        <div class="popup-influence popup-origin">
+            <h2>Tầm ảnh hưởng qua thời kỳ</h2>
+            <p class="popup-summary popup-other">Qua thời gian, truyện Tấm Cám không chỉ đơn thuần là một câu chuyện cổ tích dành cho trẻ em mà còn là biểu tượng cho sự kiên cường, lòng tin vào công lý và niềm tin vào sự chiến thắng của cái thiện. Truyện đã trở thành một phần quan trọng trong văn hóa truyền thống Việt Nam, và qua các giai đoạn lịch sử khác nhau, nó vẫn được lưu truyền và tiếp tục phát triển.</p>
+            <div id="card-area">
+                <div class="wrapper">
+                    <div class="box-area" style="gap: 60; grid-template-columns: 1fr;">
+                        <div class="box">
+                            <img style="height: 100%" alt="" src="./assets/img/img2.jpg">
+                        </div>
+                        <!-- <div class="box">
+                            <img alt="" src="./assets/img/img7.jpg">
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img4.jpg">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup7" class="popup">
+        <div class="popup-name">
+            <button class="popup-btn btn" onclick="toggle(event, 'popup7')"><i class="uil uil-times-circle"></i></button>
+            <h1>Lịch sử và xuất xứ</h1>
+        </div>
+        <p class="popup-summary">Truyện Tấm Cám là một trong những câu chuyện cổ tích nổi tiếng nhất của văn học dân gian Việt Nam. Nguồn gốc của truyện bắt đầu từ hình thức truyền miệng trong dân gian, qua nhiều thế hệ người Việt. Câu chuyện này phản ánh đậm nét văn hóa, tâm lý, phong tục tập quán của người dân thời kỳ phong kiến, đặc biệt là mối quan hệ mẹ ghẻ - con chồng và sự đấu tranh giữa cái thiện và cái ác.</p>
+        <!-- nguon goc truyen mieng -->
+        <div class="popup-origin">
+            <h2>Nguồn gốc truyền miệng</h2>
+            <p class="popup-summary popup-other">Truyện Tấm Cám được lan truyền trong dân gian chủ yếu bằng hình thức kể chuyện. Mỗi lần được kể, nội dung và các chi tiết trong truyện có thể thay đổi tùy theo cách diễn giải của người kể, điều này dẫn đến nhiều phiên bản khác nhau của truyện. Các câu chuyện truyền miệng thường được truyền từ đời này qua đời khác, giúp duy trì và phát triển các giá trị đạo đức và xã hội qua thời gian.</p>
+        </div>
+        <!-- ghi chep trong tai lieu chinh thuc -->
+        <div class="popup-note">
+            <div class="popup-origin">
+                <h2>Ghi chép trong tài liệu chính thức</h2>
+            </div>
+            <div class="popup-bottom popup-summary popup-other">
+                <div class="popup-left">
+                    <img src="./assets/img/img8.jpg" alt="">
+                </div>
+                <div class="popup-right popup-summary popup-other">
+                    <p>Về sau, <span class="highlight">Tấm Cám</span> đã được các nhà văn học và nghiên cứu ghi chép lại trong các tuyển tập truyện cổ tích Việt Nam. Một trong những tài liệu sớm ghi chép về câu chuyện này là sách <span class="highlight">"Kho tàng truyện cổ tích Việt Nam"</span> của Nguyễn Đổng Chi, một nhà nghiên cứu văn học dân gian nổi tiếng. Nhờ các ghi chép này, truyện Tấm Cám đã trở thành một phần của văn học dân gian chính thức và được bảo tồn dưới dạng văn bản.</p>
+                </div>
+            </div>
+        </div>
+        <!-- su phat trien qua thoi gian va vung mien -->
+        <div class="popup-developer popup-origin">
+            <h2>Sự phát triển qua thời gian và vùng miền</h2>
+            <p class="popup-summary popup-other">Trải qua thời gian, truyện Tấm Cám có nhiều phiên bản khác nhau tại các vùng miền. Mỗi vùng có cách kể chuyện và chi tiết khác nhau, ví dụ:</p>
+            <div id="card-area">
+                <div class="wrapper">
+                    <div class="box-area">
+                        <div class="box">
+                            <img alt="" src="./assets/img/img6.jpg">
+                            <h2>Miền Bắc</h2>
+                            <div class="overlay">
+                                <p>Ở một số phiên bản miền Bắc, Tấm sau khi chết biến thành chim vàng anh rồi được hồi sinh.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img7.jpg">
+                            <h2>Miền Trung</h2>
+                            <div class="overlay">
+                                <p>Ở miền Trung, sau khi Tấm chết, cô biến thành cây xoan đào rồi quả thị, với một số chi tiết về sự hóa thân được thêm vào hoặc thay đổi.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img4.jpg">
+                            <h2>Miền Nam</h2>
+                            <div class="overlay">
+                                <p>Ở miền Trung, sau khi Tấm chết, cô biến thành cây xoan đào rồi quả thị, với một số chi tiết về sự hóa thân được thêm vào hoặc thay đổi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="popup-summary popup-other">Những thay đổi này phản ánh tư tưởng, niềm tin và quan điểm xã hội khác nhau của từng vùng miền, nhưng chung quy vẫn giữ lại cốt lõi của câu chuyện về sự đối đầu giữa cái thiện và cái ác.</p>
+        </div>
+        <!-- tam anh huong qua cac thoi ky -->
+        <div class="popup-influence popup-origin">
+            <h2>Tầm ảnh hưởng qua thời kỳ</h2>
+            <p class="popup-summary popup-other">Qua thời gian, truyện Tấm Cám không chỉ đơn thuần là một câu chuyện cổ tích dành cho trẻ em mà còn là biểu tượng cho sự kiên cường, lòng tin vào công lý và niềm tin vào sự chiến thắng của cái thiện. Truyện đã trở thành một phần quan trọng trong văn hóa truyền thống Việt Nam, và qua các giai đoạn lịch sử khác nhau, nó vẫn được lưu truyền và tiếp tục phát triển.</p>
+            <div id="card-area">
+                <div class="wrapper">
+                    <div class="box-area" style="gap: 60; grid-template-columns: 1fr;">
+                        <div class="box">
+                            <img style="height: 100%" alt="" src="./assets/img/img2.jpg">
+                        </div>
+                        <!-- <div class="box">
+                            <img alt="" src="./assets/img/img7.jpg">
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img4.jpg">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup8" class="popup">
+        <div class="popup-name">
+            <button class="popup-btn btn" onclick="toggle(event, 'popup8')"><i class="uil uil-times-circle"></i></button>
+            <h1>Lịch sử và xuất xứ</h1>
+        </div>
+        <p class="popup-summary">Truyện Tấm Cám là một trong những câu chuyện cổ tích nổi tiếng nhất của văn học dân gian Việt Nam. Nguồn gốc của truyện bắt đầu từ hình thức truyền miệng trong dân gian, qua nhiều thế hệ người Việt. Câu chuyện này phản ánh đậm nét văn hóa, tâm lý, phong tục tập quán của người dân thời kỳ phong kiến, đặc biệt là mối quan hệ mẹ ghẻ - con chồng và sự đấu tranh giữa cái thiện và cái ác.</p>
+        <!-- nguon goc truyen mieng -->
+        <div class="popup-origin">
+            <h2>Nguồn gốc truyền miệng</h2>
+            <p class="popup-summary popup-other">Truyện Tấm Cám được lan truyền trong dân gian chủ yếu bằng hình thức kể chuyện. Mỗi lần được kể, nội dung và các chi tiết trong truyện có thể thay đổi tùy theo cách diễn giải của người kể, điều này dẫn đến nhiều phiên bản khác nhau của truyện. Các câu chuyện truyền miệng thường được truyền từ đời này qua đời khác, giúp duy trì và phát triển các giá trị đạo đức và xã hội qua thời gian.</p>
+        </div>
+        <!-- ghi chep trong tai lieu chinh thuc -->
+        <div class="popup-note">
+            <div class="popup-origin">
+                <h2>Ghi chép trong tài liệu chính thức</h2>
+            </div>
+            <div class="popup-bottom popup-summary popup-other">
+                <div class="popup-left">
+                    <img src="./assets/img/img8.jpg" alt="">
+                </div>
+                <div class="popup-right popup-summary popup-other">
+                    <p>Về sau, <span class="highlight">Tấm Cám</span> đã được các nhà văn học và nghiên cứu ghi chép lại trong các tuyển tập truyện cổ tích Việt Nam. Một trong những tài liệu sớm ghi chép về câu chuyện này là sách <span class="highlight">"Kho tàng truyện cổ tích Việt Nam"</span> của Nguyễn Đổng Chi, một nhà nghiên cứu văn học dân gian nổi tiếng. Nhờ các ghi chép này, truyện Tấm Cám đã trở thành một phần của văn học dân gian chính thức và được bảo tồn dưới dạng văn bản.</p>
+                </div>
+            </div>
+        </div>
+        <!-- su phat trien qua thoi gian va vung mien -->
+        <div class="popup-developer popup-origin">
+            <h2>Sự phát triển qua thời gian và vùng miền</h2>
+            <p class="popup-summary popup-other">Trải qua thời gian, truyện Tấm Cám có nhiều phiên bản khác nhau tại các vùng miền. Mỗi vùng có cách kể chuyện và chi tiết khác nhau, ví dụ:</p>
+            <div id="card-area">
+                <div class="wrapper">
+                    <div class="box-area">
+                        <div class="box">
+                            <img alt="" src="./assets/img/img6.jpg">
+                            <h2>Miền Bắc</h2>
+                            <div class="overlay">
+                                <p>Ở một số phiên bản miền Bắc, Tấm sau khi chết biến thành chim vàng anh rồi được hồi sinh.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img7.jpg">
+                            <h2>Miền Trung</h2>
+                            <div class="overlay">
+                                <p>Ở miền Trung, sau khi Tấm chết, cô biến thành cây xoan đào rồi quả thị, với một số chi tiết về sự hóa thân được thêm vào hoặc thay đổi.</p>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img4.jpg">
+                            <h2>Miền Nam</h2>
+                            <div class="overlay">
+                                <p>Ở miền Trung, sau khi Tấm chết, cô biến thành cây xoan đào rồi quả thị, với một số chi tiết về sự hóa thân được thêm vào hoặc thay đổi.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <p class="popup-summary popup-other">Những thay đổi này phản ánh tư tưởng, niềm tin và quan điểm xã hội khác nhau của từng vùng miền, nhưng chung quy vẫn giữ lại cốt lõi của câu chuyện về sự đối đầu giữa cái thiện và cái ác.</p>
+        </div>
+        <!-- tam anh huong qua cac thoi ky -->
+        <div class="popup-influence popup-origin">
+            <h2>Tầm ảnh hưởng qua thời kỳ</h2>
+            <p class="popup-summary popup-other">Qua thời gian, truyện Tấm Cám không chỉ đơn thuần là một câu chuyện cổ tích dành cho trẻ em mà còn là biểu tượng cho sự kiên cường, lòng tin vào công lý và niềm tin vào sự chiến thắng của cái thiện. Truyện đã trở thành một phần quan trọng trong văn hóa truyền thống Việt Nam, và qua các giai đoạn lịch sử khác nhau, nó vẫn được lưu truyền và tiếp tục phát triển.</p>
+            <div id="card-area">
+                <div class="wrapper">
+                    <div class="box-area" style="gap: 60; grid-template-columns: 1fr;">
+                        <div class="box">
+                            <img style="height: 100%" alt="" src="./assets/img/img2.jpg">
+                        </div>
+                        <!-- <div class="box">
+                            <img alt="" src="./assets/img/img7.jpg">
+                        </div>
+                        <div class="box">
+                            <img alt="" src="./assets/img/img4.jpg">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!-- ----- TYPING JS Link ----- -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
